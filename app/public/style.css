@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(144, 238, 221);
+}
+
+.jumbotron{
+    background-color: rgb(232, 62, 141);
+    margin-top: 5px;
+}
+
+.welcome, .question{
+    font-weight: bolder;
+    font-family: 'Inria Serif', serif;
+}
+
+.question{
+    font-size: 30px;
+}
+
+.btn{
+    background-color: lightpink;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn:hover{
+    transform: translate(5px, 5px);
+}
