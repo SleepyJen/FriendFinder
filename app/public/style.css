@@ -19,6 +19,8 @@ body{
 .btn{
     background-color: lightpink;
     box-shadow: 5px 5px 5px grey;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 .btn:hover{

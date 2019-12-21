@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     let user = req.body;
     console.log(user);
-    res.send('success');
+    res.send(friends);
 });
 
 module.exports = router;
