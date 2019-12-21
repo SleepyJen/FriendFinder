@@ -13,8 +13,16 @@ $(document).ready(function () {
             'photo': $('#photo').val(),
             'scores': scores
         }
+        console.log(friend);
 
 
+        $.ajax({
+            type: 'POST',
+            url: '/api/friends',
+            data: friend
+        }).then(res => {
+            console.log(res);
+        });
     });
 
 });

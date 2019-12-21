@@ -24,14 +24,15 @@ router.post('/', (req, res) => {
     let score = 0;
 
     for (let sc = 0; sc < userScores.length; sc++) {
-        score += userScores[sc];
+        score += parseInt(userScores[sc]);
     }
 
     for (let i = 0; i < friends.length; i++) {
         let friendScore = 0;
-        for (let j = 0; j < friends.scores.length; j++) {
-            friendScore += friends.scores[j];
+        for (let j = 0; j < friends[i].scores.length; j++) {
+            friendScore += friends[i].scores[j];
         }
+
         let diff = Math.abs(score - friendScore);
         if (diff < difference) {
             difference = diff;
