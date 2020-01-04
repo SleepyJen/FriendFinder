@@ -22,7 +22,9 @@ $(document).ready(function () {
             data: friend
         }).then(res => {
             console.log(res);
+            alert('Best match is with: ' + res.name);
         });
+
     });
 
 });
